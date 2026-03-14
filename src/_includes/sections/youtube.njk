@@ -1,0 +1,14 @@
+<section class="youtube-section">
+  <div class="container youtube-inner">
+    <h2 class="youtube-label">{{ t.youtubeLabel }}</h2>
+    <div class="youtube-embed">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/{{ site.youtubeId }}?rel=0&modestbranding=1"
+        title="{{ t.youtubeLabel }}"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,27 @@
+{
+  "lang": "en-US",
+  "langLabel": "English",
+  "altLangPath": "/p/o-pato/",
+  "altLangLabel": "Português",
+  "bookTitle": "The Duck",
+  "authorName": "Henrique Müller",
+  "heroHeading": "O Pato",
+  "heroSubtitle": "A children's picture book",
+  "heroText": "Whoever heard of a singing duck? Like in João Gilberto's music, its quacks turned into samba and made friends along the way.",
+  "heroText2": "Now the duck, the teal, the goose, and the swan spend their days by the lagoon, singing and having fun.",
+  "credit": "Based on the song by Jayme Silva and Neuza Teixeira, performed by João Gilberto.",
+  "youtubeLabel": "The song that inspired the book",
+  "duckAlt": "Illustration of the duck, the book's main character",
+  "dedicationHeading": "For Teresa",
+  "dedicationText": [
+    "This little book was made for Teresa, but other children are welcome to enjoy it too.",
+    "Teresa, dad started this book when you were born. It is something special that represents the connection between you, mom, and me. Music is very important in our lives: it is part of how we understand who we are and the world around us.",
+    "This duck song was a way for us to be together when you were still in mom's belly, and it also helped us stay calm when things were difficult.",
+    "When everything feels a little strange, take a breath and try to take it easy. Maybe a QUEN QUEN will make things more fun."
+  ],
+  "dedicationSignature": "Berlin, April 2025.",
+  "bookCoverAlt": "Cover of O Pato, featuring the duck illustration on a green and purple background",
+  "footerAuthor": "Henrique Müller",
+  "pageTitle": "O Pato — Henrique Müller",
+  "pageDescription": "A children's picture book based on the song O Pato by João Gilberto. Illustrated by Henrique Müller."
+}

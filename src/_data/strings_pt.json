@@ -1,0 +1,27 @@
+{
+  "lang": "pt-BR",
+  "langLabel": "Português",
+  "altLangPath": "/p/o-pato/en/",
+  "altLangLabel": "English",
+  "bookTitle": "O Pato",
+  "authorName": "Henrique Müller",
+  "heroHeading": "O Pato",
+  "heroSubtitle": "Um livro ilustrado infantil",
+  "heroText": "Onde já se viu um pato cantor? Como na música de João Gilberto, seus grasnados deram em samba e criaram amizades pelo caminho.",
+  "heroText2": "Agora o pato, o marreco, o ganso e o cisne passam os dias na beira da lagoa, cantando e se divertindo.",
+  "credit": "Baseado na canção de Jayme Silva e Neuza Teixeira, interpretada por João Gilberto.",
+  "youtubeLabel": "A música que deu origem ao livro",
+  "duckAlt": "Ilustração do pato, personagem principal do livro",
+  "dedicationHeading": "Para a Teresa",
+  "dedicationText": [
+    "Esse livrinho foi feito para a Teresa, mas outras crianças podem aproveitar também.",
+    "Teresa, o papai começou esse livro quando você nasceu. É algo especial que representa a conexão entre você, a mamãe e eu. A música é muito importante na nossa vida: faz parte de como entendemos nosso jeito de ser e as coisas ao nosso redor.",
+    "Essa música do pato foi um jeito de estarmos juntos quando você ainda estava na barriga da mamãe e também ajudou a nos acalmar quando as coisas estavam difíceis.",
+    "Quando tudo estiver um pouquinho estranho, respire e tente levar a situação com calma. Talvez um QUEN QUEN deixe as coisas mais divertidas."
+  ],
+  "dedicationSignature": "Berlim, abril de 2025.",
+  "bookCoverAlt": "Capa do livro O Pato, com a ilustração do pato em fundo verde e roxo",
+  "footerAuthor": "Henrique Müller",
+  "pageTitle": "O Pato — Henrique Müller",
+  "pageDescription": "Livro ilustrado infantil baseado na canção O Pato de João Gilberto. Ilustrado por Henrique Müller."
+}

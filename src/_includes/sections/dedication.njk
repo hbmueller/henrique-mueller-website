@@ -1,0 +1,16 @@
+<section class="dedication">
+  <div class="container dedication-inner">
+    <div class="dedication-text">
+      <h2 class="dedication-heading">{{ t.dedicationHeading }}</h2>
+      <div class="dedication-body">
+        {% for paragraph in t.dedicationText %}
+          <p>{{ paragraph }}</p>
+        {% endfor %}
+        <p class="dedication-signature">{{ t.dedicationSignature }}</p>
+      </div>
+    </div>
+    <figure class="dedication-cover">
+      <img src="/assets/images/book-cover.jpg" alt="{{ t.bookCoverAlt }}" width="1000" height="750" loading="lazy">
+    </figure>
+  </div>
+</section>
