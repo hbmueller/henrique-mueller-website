@@ -1,0 +1,383 @@
+/* =========================================================
+   FONTS
+   ========================================================= */
+
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/assets/fonts/Jost-Medium.woff2') format('woff2'),
+       url('/assets/fonts/Jost-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('/assets/fonts/Lato-Light.woff2') format('woff2'),
+       url('/assets/fonts/Lato-Light.woff') format('woff');
+}
+
+/* =========================================================
+   DESIGN TOKENS
+   ========================================================= */
+
+:root {
+  --color-green:   #4BB890;
+  --color-purple:  #C87DC8;
+  --color-pink:    #D94070;
+  --color-cream:   #FAF6F0;
+  --color-white:   #FFFFFF;
+  --color-dark:    #1A1A1A;
+
+  --font-heading: 'Jost', 'Futura', 'Century Gothic', sans-serif;
+  --font-body:    'Lato', 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+
+  --radius:        4px;
+  --max-width:     900px;
+  --gap:           clamp(1.5rem, 5vw, 3rem);
+}
+
+/* =========================================================
+   RESET & BASE
+   ========================================================= */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  font-weight: 300;
+  color: var(--color-dark);
+  background: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+}
+
+img { display: block; max-width: 100%; height: auto; }
+
+a { color: inherit; }
+
+/* =========================================================
+   LAYOUT UTILITIES
+   ========================================================= */
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--gap);
+}
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.site-header {
+  background: var(--color-dark);
+  color: var(--color-white);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 3px solid var(--color-green);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.header-title {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   LANGUAGE SWITCHER
+   ========================================================= */
+
+.lang-switcher {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-heading);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.lang-current {
+  opacity: 0.5;
+}
+
+.lang-link {
+  background: var(--color-green);
+  color: var(--color-dark);
+  padding: 0.2em 0.6em;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.lang-link:hover {
+  background: var(--color-purple);
+  color: var(--color-white);
+}
+
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+
+.hero {
+  background: var(--color-green);
+  color: var(--color-white);
+  padding: clamp(3rem, 8vw, 5rem) 0 0;
+  overflow: hidden;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--gap);
+  flex-wrap: wrap;
+}
+
+.hero-text {
+  flex: 1 1 300px;
+  padding-bottom: clamp(2rem, 5vw, 4rem);
+}
+
+.hero-heading {
+  margin-bottom: 0.75rem;
+  line-height: 1;
+}
+
+.hero-subtitle {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 0.8rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.75;
+  margin-bottom: 1.5rem;
+}
+
+.hero-logo {
+  width: clamp(180px, 40vw, 300px);
+  height: auto;
+  display: block;
+}
+
+.hero-body {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  line-height: 1.6;
+  margin-bottom: 0.8rem;
+  max-width: 42ch;
+}
+
+.hero-credit {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  opacity: 0.7;
+  font-style: italic;
+  max-width: 42ch;
+}
+
+.hero-duck {
+  flex: 0 0 auto;
+  align-self: flex-end;
+  margin-bottom: 70px;
+}
+
+.duck-img {
+  width: clamp(160px, 28vw, 280px);
+  height: auto;
+  display: block;
+  margin-bottom: 0;
+  /* Outline built into illustration provides contrast */
+}
+
+/* =========================================================
+   YOUTUBE SECTION
+   ========================================================= */
+
+.youtube-section {
+  background: var(--color-purple);
+  padding: clamp(3rem, 8vw, 5rem) 0;
+  margin-top: 10px;
+}
+
+.youtube-inner {
+  text-align: center;
+}
+
+.youtube-label {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+  color: var(--color-white);
+}
+
+.youtube-embed {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+}
+
+.youtube-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* =========================================================
+   DEDICATION SECTION
+   ========================================================= */
+
+.dedication {
+  background: var(--color-white);
+  padding: clamp(3rem, 8vw, 5rem) 0;
+  border-top: 4px solid var(--color-purple);
+}
+
+.dedication-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: clamp(2rem, 5vw, 4rem);
+}
+
+.dedication-text {
+  flex: 1 1 320px;
+}
+
+.dedication-heading {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  color: var(--color-purple);
+  margin-bottom: 2rem;
+  letter-spacing: -0.01em;
+}
+
+.dedication-body p {
+  font-size: clamp(0.95rem, 2vw, 1.05rem);
+  line-height: 1.75;
+  margin-bottom: 1.2rem;
+  color: var(--color-dark);
+}
+
+.dedication-signature {
+  margin-top: 2rem;
+  font-style: italic;
+  opacity: 0.6;
+  font-size: 0.9rem !important;
+}
+
+.dedication-cover {
+  flex: 0 0 auto;
+  width: clamp(200px, 35vw, 340px);
+  margin: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.14);
+  border: 4px solid var(--color-purple);
+  align-self: flex-start;
+}
+
+.dedication-cover img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .dedication-inner {
+    flex-direction: column-reverse;
+  }
+
+  .dedication-cover {
+    width: 100%;
+    max-width: 280px;
+    position: static;
+    align-self: center;
+  }
+}
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.site-footer {
+  background: var(--color-dark);
+  color: var(--color-white);
+  padding: clamp(2rem, 5vw, 3rem) 0;
+}
+
+.footer-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.footer-author {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.footer-credit {
+  font-size: 0.8rem;
+  opacity: 0.5;
+  font-style: italic;
+  max-width: 50ch;
+}
+
+.footer-github {
+  font-size: 0.8rem;
+  opacity: 0.4;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  transition: opacity 0.15s;
+}
+
+.footer-github:hover { opacity: 0.8; }
+
+.site-footer .lang-switcher { margin-top: 0.5rem; }
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 600px) {
+  .hero-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .hero-duck {
+    align-self: flex-end;
+  }
+
+  .duck-img {
+    width: clamp(140px, 55vw, 220px);
+  }
+}
